@@ -1,377 +1,115 @@
-<DOCTYPE html>
-<html>
-    <head>
-<meta charset="utf-8">
-      <title>Page grid</title>
-     <link rel="stylesheet"href="mysober.css">
-   <link rel="stylesheet"href="mymainProgect.css">
-        <style>
-body{
-  background:radial-gradient(#FFFFFF,#B6B6B6);
-}
-            .color{
-  background:radial-gradient(at left,#FF0000,#124765,#CD00FF );
-  background:radial-gradient(at left,#FF0000,#124765,#CD00FF );
-  -webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-font:bold italic 30px ,cursor;
-}
-        .alternative{
-  direction: rtl;
-  display:grid;
-  background:radial-gradient(#111,#778);
-  grid-template-columns:33% 33% 34% ;
-  padding: 20px;
-}
-
-
-            *{
-                box-sizing:border-box;
-            }
-        body{
-    background:white;
-    color:#E4E5E8;
-    margin: 0 auto;
-  }
-.main{
-    display:grid;
-    width:100%;
-  
-    grid-template-columns:auto;
-    
-}
-
-ul{
-  background:radial-gradient(#111,#333);
-  list-style-type:none;
-  display:grid;
-  text-align:center ;
-  grid-template-columns:auto auto auto ;
-  grid-template-rows:70px;
-  width:100%;
-  margin-top:0.1px;
-  }
-  ul li:hover{
-    font-size:20px;
-    border-radius:10px ;
-    height:25px;
-  }
-  ul.fary li:hover{
-    background-color:black ;
-    font-size:20px;
-    border-radius:10px ;
-    height:25px;
-  }
-  .fary{
-    background:radial-gradient(#000,#4066FF);
-    margin-top:-16px ;
-    height: 30px;padding: 5px ;
-  }
-
-.market{
-    display:grid;
-    grid-template-columns: auto ;
-    justify-content: space-around ;
-    align-items: center ;
-  
-}
-div.market div{
-    margin:5px ;
-    width:100%;
-    box-shadow: 1px 1px 2px black ;
-}
-.name{
-font-size:30px;
-background:radial-gradient(at left,#FF0000,#124765,#CD00FF );
-
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
- }
-p{
-    font-size:120px;
-    margin: 0 auto;
-}
-h2{
-  text-align: center ;
-  background:green;
-  border:1px solid green;
-  margin-bottom: 0;
-}
-.cricut{
-  display:flex;
-  justify-content: space-around ;
-  overflow:auto;
-}
-img{
-  border-radius:10px;
-}
-.cricut div{
-  margin:10px ;
-}
-.wellcome{
-  display:grid ;
-  grid-template-columns:auto auto auto auto;
-  grid-template-rows:50px 100px 100px 10px;
-  text-align:center ;
-  background:radial-gradient(red,blue );
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-margin: 10px ;
-font-size: 30px ;
-}
-.wellcome div{
-  padding: 5px;
-  text-transform:capitalize ;
-}
- .a
- {
- font:bold italic bold 20px,courier;
- word-spacing:-1px;
- letter-spacing:-3px;
-   grid-row:1/2;
-  grid-column:1/5;
-position:relative ;
-top:-40px;
-overflow:auto ;
- 
-}
-.b
- {
-  font-family:courier,sans-serif,cursive,arial;
- font-weight:bold;
- font-style:italic;
-   letter-spacing:-10px;
- text-shadow: 1px 10px 9px gray;
-   grid-row:3/4;
-  grid-column:2/5;
-  margin-top: -10px;
-  vertical-align:top;
-}
- .c
- {
-  font-family:courier,sans-serif,cursive,arial;
- font-weight:bold;
- font-style:italic;
-  grid-row:2/3;
-  grid-column:2/5;
-  text-align:center ;
-  
-  margin-top:5px;
-}
-.d{
-grid-row:2/5;
-  grid-column:1/2;
-  background:radial-gradient(#DC1FBC,#1C0919,#000000);
-  width:20px;
-}
-.e{
-grid-row:4/5;
-  grid-column:1/5;
-  background: radial-gradient(#DC1FBC,#1C0919,#FFF1FD);
-}
-@keyframes move1{
-    0%{
-        transform:translate(-1000px,0px);
-    }
-
-    100% {
-      transform:translate(1000px,0px);
-    }
-}
-.move2{
-  position:absolute;
-  top:3px;
-  background:white ;
-  white-space:nowrap;
-  animation:move1 4s linear infinite alternate;
-  background:radial-gradient(at left,#FF0000,#124765,#CD00FF );
-  -webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
-  @keyframes example {
-    0% {
-transform:translate(2000px,0px);
-opacity:1;
-    }
-
-    100% {
-      transform:translate(-2000px,0px);
-    
-    }
-}
-.Resturant{
-  
-margin-top:-16px;
-  display:grid ;
-  color:#A0AFC7;
-  font-weight: bold ;
-grid-template-columns:430px 430px 430px 430px 430px 430px;
-
-  height:400px;
-  position:relative ;
-  overflow:auto ;
-}
- .imageMarkey{
-border-radius:20px ;
-width:400px ;height:400px;
-padding:30px;
-    position: absolute;
-    animation: example 4s linear infinite alternate;
-    
-    /* تحسينات إضافية للأداء */
-    
-}
-.plain{
-  background:radial-gradient(#111,#ddd,#aaa);
-  height:100px;
-  width:95%;
-  font:bold italic 10px ,cursor;
-  margin:auto;
-  box-shadow:1px 1px 3px blue;
-
- 
-}
-  @media(min-width:600px)
-{
-.text{
-  font-size:200px;
-}.plain{
-
-  font-size:30px;
-  
-}
-.a
- {
-   height:100px;
-  font-size:60px;
-  font-weight:bold ;
-}.name{
-  font-size:40px;
-}
-
-.cricut{
-  display:flex;
-justify-content: space-around;
-}
-fieldset{
-  display:grid;
-  grid-template-columns:auto auto auto auto;
-}
-    }
-  </style>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سوبر ماركت السلام</title>
+    <link rel="stylesheet" href="mysober.css" />
+    <link rel="stylesheet" href="mymainProgect.css" />
   </head>
- <body>
-   
-     <div class="main">
-     <ul>
-     <li><h1>&#129490;</h1></li>
-     <li><h1>&#128269;</h1></li>
-     <li><h1>&#127968;</h1></li>
-   </ul>
-   <ul class="fary">
-     <li>Requests</li>
-     <li>Clients</li>
-     <li>The Bills</li>
-   </ul>
-</div>
-<br>
-<div class="wellcome">
- <div class="a">i
-   <div class="move2">wellcome in sopar marketn</div></div>
-  <div class="b" style="font-size:100px;border-radius:50%; ">&#8459;<span>amdi</span></div>
-  <div class="c"><a style="font-size:55px;
-  border-radius:40px;padding:20px;box-shadow:1px 3px 2px royalblue;">&#8473;&#8475;&#9711;&#8518;&#8899;&#8450;&#8868;</a></div>
- <div class="d"></div>
-  <div class="e"></div>
-</div>
-<br>
-  <div class="Resturant"><div>    
-  <img src="/H0f875a76e26e4337a38e55691d9f9e50J.jpg_300x300.jpg"class="imageMarkey">
-  </div>
-  <div>    
-  <img src="/dClzcwrBNtTRVGAEZYntjN1vUHkxiz0CqFq5MqKy.jpg"class="imageMarkey"></div>
-<div><img src="/81uI4lWo71L._AC_UL330_SR330,330_.jpg"class="imageMarkey">
-     </div>
-  <div>    
-  <img src="/abac9b86-a2be-4fa4-913a-be4fe9525071-494.11764705882x500-LOZeZRVKgnFboEH87wiltfSMu2my82EaxwiDpsfI.png"class="imageMarkey"></div>
-   <div>    
-  <img src="/comp8697459293521.png"class="imageMarkey"></div>
-       </div>
-     <div class="plain "style="text-align:center;">
-       <span class="color">
-      تستطيع الحصول على كل ما تريد من سوبر ماركت السلام قم بتجميع كل ما تريده
-    </span>
-     </div>
-     
+  <body>
+    <div class="main">
+      <ul>
+        <li><h1>🧑</h1></li>
+        <li><h1>🔎</h1></li>
+        <li><h1>🏠</h1></li>
+      </ul>
+      <ul class="fary">
+        <li>الطلبات</li>
+        <li>العملاء</li>
+        <li>الفواتير</li>
+      </ul>
+    </div>
 
-<div class="market">
-    <div><p class="text">&#128722;<span class="name">التسوق من المتجر </span></p><h2>التسويق</h2>
-    </div>
-<div><p class="text"><img src="Csslean.png"width="200px"style="width"inclick="incluck()"usemap="#trans">
-<map name="trans">
-  <area shape="rect"coords="0,0,200,200"href="/ web.html">
-</map>
-<span class="name">التسوق من المتجر </span></p><h2>التسويق</h2>
-    </div>
-    <div><p class="text">&#128221; <span class="name">الطلبات المختاره</span></p><h2>المبيعات</h2>
-    </div>
-    <div><p class="text">&#128184;<span class="name">الدفع والحسبات</span></p><h2>المشتريات</h2>
-    </div>
-</div>
-<div class="cricut">
-  <div><img src="/81uI4lWo71L._AC_UL330_SR330,330_.jpg"width="100px"></div>
-  <div><img src="/abac9b86-a2be-4fa4-913a-be4fe9525071-494.11764705882x500-LOZeZRVKgnFboEH87wiltfSMu2my82EaxwiDpsfI.png"width="100px"></div>
-  <div><img src="/IMG-7816_800x.png"width="100px"></div>
-  <div><img src="/81uI4lWo71L._AC_UL330_SR330,330_.jpg"width="100px"></div>
-  <div><img src="/1OQPgnRvQtouMm6hHdXyBT9cJWyabD8W31kuQCvm.jpg"width="100px"></div>
-  <div><img src="/6ab3495c-f5b7-4037-a56d-92de36035ca6-1000x1000-vhWXansbWvaCi3JytqlbX3Fw2GqPD2EqIh09b2ZA.jpg"width="100px"></div>
-  <div>
-  <img src="/41JbLMoOlrL._AC_.jpg"width="100px"></div>
- 
-</div>
- <fieldset class="personal">
-   <legend class="myconnect">للتواصل مع الفريف المطور او الاستفسار</legend>
-   <div>
-   <a href="https://wa.me/+967778461645" target="_blank" name="wat">واتساب</a>
-   </div>
-   <div>
-   <img class="connect" src="واتس-اب-الاخضر-العادي.png" width="100px" height="100px" alt="not fond" usemap="#watsup" style="width" onclick="getcoordinates(event)">
-   <map name="watsup">
-     <area shape="rect" coords="0,0,90,98" href="https://wa.me/+967778461645" target="-blank" />
-   </map>
-   </div>
-   <div>
-   <a href="https://t.me/+967778461645" target="_blank" name="wat">تيلجرام</a>
-   </div>
-   <div>
-   <img class="connect" src="/1200x630wa.png" width="100px" height="100px" alt="not fond" style="width" onclick="getcoordinates(event)" usemap="#telegram">
-   <map name="telegram">
-     <area shape="rect" coords="0,0,100,400" href="https://t.me/+967778461645" target="_blank" />
-   </map>
-   </div>
-   <div>
-   <a href="tel:+967778461645" target="_blank" >تواصل خاص</a>
-   </div>
-   <div>
-   <img class="connect" src="/call person .jpg" width="100px" height="100px" alt="not fond" style="width" onclick="getcoordinates(event)" usemap="#perprivate">
-   <map name="perprivate">
-     <area shape="rect" coords="0,0,90,400" href="tel:+967778461645" target="_blank">
-   </map>
-   </div>
-   <p id='watsup'></p>
- </fieldset>
-  <div class="lookwe">
-   <a href="/myself.html" terget="_blank">looke we</a>
- </div>
-<div class="alternative">
-  <div>الخصوصيه</div>
-  <div>الامان</div>
-  <div>البيانات</div>
-  <div>المشتريات</div>
-  <div>الاسعار </div>
-  <div>البيانات الشخصية</div>
-  <div>شروط الخدمه</div>
-</div>
+    <section class="welcome">
+      <div class="a">
+        <div class="move2">Welcome to Soper Market</div>
+      </div>
+      <div class="b">H<span>amdi</span></div>
+      <div class="c">
+        <a href="#contact">R M C</a>
+      </div>
+      <div class="d"></div>
+      <div class="e"></div>
+    </section>
 
-    </body>
+    <div class="gallery">
+      <img src="H0f875a76e26e4337a38e55691d9f9e50J.jpg_300x300.jpg" alt="product 1" />
+      <img src="dClzcwrBNtTRVGAEZYntjN1vUHkxiz0CqFq5MqKy.jpg" alt="product 2" />
+      <img src="81uI4lWo71L._AC_UL330_SR330,330_.jpg" alt="product 3" />
+      <img src="abac9b86-a2be-4fa4-913a-be4fe9525071-494.11764705882x500-LOZeZRVKgnFboEH87wiltfSMu2my82EaxwiDpsfI.png" alt="product 4" />
+      <img src="comp8697459293521.png" alt="product 5" />
+    </div>
+
+    <div class="plain">
+      <span class="color">تستطيع الحصول على كل ما تريد من سوبر ماركت السلام، قم بتجميع كل ما تريده</span>
+    </div>
+
+    <div class="market">
+      <div>
+        <p class="text">🛒<span class="name">التسوق من المتجر</span></p>
+        <h2>التسويق</h2>
+      </div>
+      <div>
+        <p class="text"><img src="Csslean.png" alt="clean" width="200" /></p>
+        <h2>التسويق</h2>
+      </div>
+      <div>
+        <p class="text">📑 <span class="name">الطلبات المختارة</span></p>
+        <h2>المبيعات</h2>
+      </div>
+      <div>
+        <p class="text">💳<span class="name">الدفع والحسابات</span></p>
+        <h2>المشتريات</h2>
+      </div>
+    </div>
+
+    <div class="cricut">
+      <img src="81uI4lWo71L._AC_UL330_SR330,330_.jpg" alt="item" />
+      <img src="abac9b86-a2be-4fa4-913a-be4fe9525071-494.11764705882x500-LOZeZRVKgnFboEH87wiltfSMu2my82EaxwiDpsfI.png" alt="item" />
+      <img src="IMG-7816_800x.png" alt="item" />
+      <img src="1OQPgnRvQtouMm6hHdXyBT9cJWyabD8W31kuQCvm.jpg" alt="item" />
+      <img src="6ab3495c-f5b7-4037-a56d-92de36035ca6-1000x1000-vhWXansbWvaCi3JytqlbX3Fw2GqPD2EqIh09b2ZA.jpg" alt="item" />
+      <img src="41JbLMoOlrL._AC_.jpg" alt="item" />
+    </div>
+
+    <fieldset class="personal" id="contact">
+      <legend class="myconnect">للتواصل مع الفريق المطور أو الاستفسار</legend>
+
+      <div>
+        <a href="https://wa.me/+967778461645" target="_blank">واتساب</a>
+      </div>
+      <div>
+        <img class="connect" src="واتس-اب-الاخضر-العادي.png" width="100" height="100" alt="واتساب" />
+      </div>
+
+      <div>
+        <a href="https://t.me/+967778461645" target="_blank">تيلجرام</a>
+      </div>
+      <div>
+        <img class="connect" src="1200x630wa.png" width="100" height="100" alt="تيلجرام" />
+      </div>
+
+      <div>
+        <a href="tel:+967778461645" target="_blank">تواصل خاص</a>
+      </div>
+      <div>
+        <img class="connect" src="call%20person%20.jpg" width="100" height="100" alt="اتصال" />
+      </div>
+    </fieldset>
+
+    <div class="lookwe">
+      <a href="myself.html" target="_blank">لوحة المعلومات</a>
+    </div>
+
+    <div class="alternative">
+      <div>الخصوصية</div>
+      <div>الأمان</div>
+      <div>البيانات</div>
+      <div>المشتريات</div>
+      <div>الأسعار</div>
+      <div>البيانات الشخصية</div>
+      <div>شروط الخدمة</div>
+    </div>
+  </body>
 </html>
